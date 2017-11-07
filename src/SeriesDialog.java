@@ -2,6 +2,9 @@ import javax.swing.*;
 import javax.swing.event.DocumentEvent;
 import javax.swing.event.DocumentListener;
 import java.awt.event.*;
+import java.io.File;
+import java.io.FileWriter;
+import java.io.IOException;
 import java.util.*;
 
 class InitData {
@@ -56,6 +59,7 @@ public class SeriesDialog extends JDialog {
     private JTextField dQInput;
     private JTextField a1b1Input;
     private JTextArea output;
+    private JButton saveButton;
     private Series series;
     private ButtonGroup radioButtonGroup;
 
@@ -152,6 +156,43 @@ public class SeriesDialog extends JDialog {
         linerRadioButton.addActionListener(listener);
         exponentialRadioButton.addActionListener(listener);
 
+        saveButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                JFileChooser fileChooser = new JFileChooser();
+                int ret = fileChooser.showSaveDialog(SeriesDialog.this);
+                if (ret == JFileChooser.APPROVE_OPTION)
+                {
+                    File file = fileChooser.getSelectedFile();
+                    String absolutePath = file.getAbsolutePath();
+                    if (!absolutePath.endsWith(".txt"))
+                        file = new File(absolutePath + ".txt");
+
+                    if (!file.exists())
+                        try {
+                            file.createNewFile();
+                        } catch (IOException e1) {
+                            System.out.println(e1.getMessage());
+                            return;
+                        }
+                    FileWriter writer = null;
+                    try {
+                         writer = new FileWriter(file);
+                         writer.flush();
+                         writer.write(series.toString());
+                         writer.close();
+                    } catch (IOException e1) {
+                        System.out.println(e1.getMessage());
+                        if (writer != null)
+                            try {
+                                writer.close();
+                            } catch (IOException e2) {
+                                e2.printStackTrace();
+                            }
+                    }
+                }
+            }
+        });
     }
 
     private void onOK() {

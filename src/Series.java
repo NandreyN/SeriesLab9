@@ -19,10 +19,12 @@ public abstract class Series {
 
     public String toString() {
         StringBuilder sb = new StringBuilder();
-        for (int i = 1; i <= n; i++){
+        for (int i = 1; i <= n -1; i++){
             sb.append(String.valueOf(get(i)));
             sb.append(" , ");
         }
+        sb.append(String.valueOf(get(n)));
+        sb.append("; Sum = " + getSum());
         return sb.toString();
     }
 
