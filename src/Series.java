@@ -31,13 +31,12 @@ public abstract class Series {
             sb.append(" , ");
         }
         sb.append(String.valueOf(get(n)));
-        sb.append("; \tSum = ").append(getSum());
         return sb.toString();
     }
 
     public void saveToFile(String fileName) throws IOException {
         BufferedWriter br = new BufferedWriter(new FileWriter(fileName));
-        br.write(this.toString());
+        br.write(this.toString() + "\nSum = " + getSum());
         br.close();
     }
 }

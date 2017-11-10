@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9cc00bf7-a64c-4df1-be92-1dd7c3fddce9" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Exponential.java" afterPath="$PROJECT_DIR$/src/Exponential.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Liner.java" afterPath="$PROJECT_DIR$/src/Liner.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Series.java" afterPath="$PROJECT_DIR$/src/Series.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/SeriesDialog.form" afterPath="$PROJECT_DIR$/src/SeriesDialog.form" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/SeriesDialog.java" afterPath="$PROJECT_DIR$/src/SeriesDialog.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -21,17 +20,17 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="SeriesDialog.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="SeriesDialog.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/SeriesDialog.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="167">
-              <caret line="214" column="51" lean-forward="false" selection-start-line="214" selection-start-column="51" selection-end-line="214" selection-end-column="51" />
+            <state relative-caret-position="282">
+              <caret line="240" column="51" lean-forward="false" selection-start-line="240" selection-start-column="51" selection-end-line="240" selection-end-column="51" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#3931#3932#0" expanded="true" />
-                <element signature="e#3982#3983#0" expanded="true" />
-                <element signature="class#4183:4603" expanded="false" />
-                <element signature="class#4660:5080" expanded="false" />
+                <element signature="e#4115#4116#0" expanded="true" />
+                <element signature="e#4166#4167#0" expanded="true" />
+                <element signature="class#4367:4787" expanded="false" />
+                <element signature="class#4844:5264" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -47,8 +46,8 @@
       <file leaf-file-name="Series.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Series.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="126">
-              <caret line="33" column="23" lean-forward="false" selection-start-line="33" selection-start-column="23" selection-end-line="33" selection-end-column="23" />
+            <state relative-caret-position="330">
+              <caret line="38" column="44" lean-forward="false" selection-start-line="38" selection-start-column="44" selection-end-line="38" selection-end-column="44" />
               <folding />
             </state>
           </provider>
@@ -69,11 +68,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Exponential.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Exponential.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Exponential.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="170">
-              <caret line="12" column="30" lean-forward="false" selection-start-line="12" selection-start-column="30" selection-end-line="12" selection-end-column="30" />
+              <caret line="12" column="41" lean-forward="true" selection-start-line="12" selection-start-column="41" selection-end-line="12" selection-end-column="41" />
               <folding>
                 <element signature="e#93#94#0" expanded="true" />
                 <element signature="e#124#125#0" expanded="true" />
@@ -107,11 +106,11 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/SeriesDialog.form" />
         <option value="$PROJECT_DIR$/src/Liner.java" />
-        <option value="$PROJECT_DIR$/src/Series.java" />
-        <option value="$PROJECT_DIR$/src/SeriesDialog.java" />
         <option value="$PROJECT_DIR$/src/Exponential.java" />
+        <option value="$PROJECT_DIR$/src/Series.java" />
+        <option value="$PROJECT_DIR$/src/SeriesDialog.form" />
+        <option value="$PROJECT_DIR$/src/SeriesDialog.java" />
       </list>
     </option>
   </component>
@@ -443,7 +442,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="784" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -460,7 +459,7 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24963397" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24963397" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -513,12 +512,18 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/SeriesDialog.java</url>
-          <line>211</line>
+          <line>89</line>
           <properties />
-          <option name="timeStamp" value="13" />
+          <option name="timeStamp" value="14" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/SeriesDialog.java</url>
+          <line>239</line>
+          <properties />
+          <option name="timeStamp" value="15" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="14" />
+      <option name="time" value="16" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -533,10 +538,10 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#3931#3932#0" expanded="true" />
-            <element signature="e#3982#3983#0" expanded="true" />
-            <element signature="class#4183:4603" expanded="false" />
-            <element signature="class#4660:5080" expanded="false" />
+            <element signature="e#4115#4116#0" expanded="true" />
+            <element signature="e#4166#4167#0" expanded="true" />
+            <element signature="class#4367:4787" expanded="false" />
+            <element signature="class#4844:5264" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -584,10 +589,10 @@
           <caret line="31" column="50" lean-forward="true" selection-start-line="31" selection-start-column="50" selection-end-line="31" selection-end-column="50" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#3931#3932#0" expanded="true" />
-            <element signature="e#3982#3983#0" expanded="true" />
-            <element signature="class#4183:4603" expanded="false" />
-            <element signature="class#4660:5080" expanded="false" />
+            <element signature="e#4115#4116#0" expanded="true" />
+            <element signature="e#4166#4167#0" expanded="true" />
+            <element signature="class#4367:4787" expanded="false" />
+            <element signature="class#4844:5264" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -635,10 +640,10 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#3931#3932#0" expanded="true" />
-            <element signature="e#3982#3983#0" expanded="true" />
-            <element signature="class#4183:4603" expanded="false" />
-            <element signature="class#4660:5080" expanded="false" />
+            <element signature="e#4115#4116#0" expanded="true" />
+            <element signature="e#4166#4167#0" expanded="true" />
+            <element signature="class#4367:4787" expanded="false" />
+            <element signature="class#4844:5264" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -686,10 +691,10 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#3931#3932#0" expanded="true" />
-            <element signature="e#3982#3983#0" expanded="true" />
-            <element signature="class#4183:4603" expanded="false" />
-            <element signature="class#4660:5080" expanded="false" />
+            <element signature="e#4115#4116#0" expanded="true" />
+            <element signature="e#4166#4167#0" expanded="true" />
+            <element signature="class#4367:4787" expanded="false" />
+            <element signature="class#4844:5264" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -737,10 +742,10 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#3931#3932#0" expanded="true" />
-            <element signature="e#3982#3983#0" expanded="true" />
-            <element signature="class#4183:4603" expanded="false" />
-            <element signature="class#4660:5080" expanded="false" />
+            <element signature="e#4115#4116#0" expanded="true" />
+            <element signature="e#4166#4167#0" expanded="true" />
+            <element signature="class#4367:4787" expanded="false" />
+            <element signature="class#4844:5264" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -790,9 +795,15 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/SeriesDialog.form">
-      <provider selected="true" editor-type-id="ui-designer">
-        <state />
+    <entry file="file://$PROJECT_DIR$/src/Exponential.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="12" column="41" lean-forward="true" selection-start-line="12" selection-start-column="41" selection-end-line="12" selection-end-column="41" />
+          <folding>
+            <element signature="e#93#94#0" expanded="true" />
+            <element signature="e#124#125#0" expanded="true" />
+          </folding>
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Liner.java">
@@ -810,33 +821,27 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Series.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="33" column="23" lean-forward="false" selection-start-line="33" selection-start-column="23" selection-end-line="33" selection-end-column="23" />
+        <state relative-caret-position="330">
+          <caret line="38" column="44" lean-forward="false" selection-start-line="38" selection-start-column="44" selection-end-line="38" selection-end-column="44" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/SeriesDialog.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="167">
-          <caret line="214" column="51" lean-forward="false" selection-start-line="214" selection-start-column="51" selection-end-line="214" selection-end-column="51" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#3931#3932#0" expanded="true" />
-            <element signature="e#3982#3983#0" expanded="true" />
-            <element signature="class#4183:4603" expanded="false" />
-            <element signature="class#4660:5080" expanded="false" />
-          </folding>
-        </state>
+    <entry file="file://$PROJECT_DIR$/src/SeriesDialog.form">
+      <provider selected="true" editor-type-id="ui-designer">
+        <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Exponential.java">
+    <entry file="file://$PROJECT_DIR$/src/SeriesDialog.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="12" column="30" lean-forward="false" selection-start-line="12" selection-start-column="30" selection-end-line="12" selection-end-column="30" />
+        <state relative-caret-position="282">
+          <caret line="240" column="51" lean-forward="false" selection-start-line="240" selection-start-column="51" selection-end-line="240" selection-end-column="51" />
           <folding>
-            <element signature="e#93#94#0" expanded="true" />
-            <element signature="e#124#125#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+            <element signature="e#4115#4116#0" expanded="true" />
+            <element signature="e#4166#4167#0" expanded="true" />
+            <element signature="class#4367:4787" expanded="false" />
+            <element signature="class#4844:5264" expanded="false" />
           </folding>
         </state>
       </provider>

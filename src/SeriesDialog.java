@@ -17,6 +17,7 @@ public class SeriesDialog extends JDialog {
     private JTextField a1b1Input;
     private JTextArea output;
     private JButton saveButton;
+    private JLabel sumLabel;
     private Series series;
     private ButtonGroup radioButtonGroup;
     private String prevN, prevFirst, prevDelta;
@@ -79,6 +80,12 @@ public class SeriesDialog extends JDialog {
 
 
     public SeriesDialog() {
+        nInput.setText("1");
+        dQInput.setText("1");
+        a1b1Input.setText("1");
+        linerRadioButton.setSelected(true);
+        onLiner();
+
         setContentPane(contentPane);
         setModal(true);
 
@@ -206,7 +213,7 @@ public class SeriesDialog extends JDialog {
     }
 
     private String extractNumericData(String content) {
-        if (content.equals("") || content == null)
+        if (content == null || content.equals(""))
             return "";
 
         int i = -1;
@@ -231,6 +238,7 @@ public class SeriesDialog extends JDialog {
 
     private void updateOutputState() {
         output.setText(series.toString());
+        sumLabel.setText("Sum = " + series.getSum());
     }
 
     private void reactParamsChange() {
