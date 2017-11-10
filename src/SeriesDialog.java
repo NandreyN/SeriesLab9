@@ -3,7 +3,6 @@ import javax.swing.event.DocumentEvent;
 import javax.swing.event.DocumentListener;
 import java.awt.event.*;
 import java.io.File;
-import java.io.FileWriter;
 import java.io.IOException;
 import java.util.*;
 
@@ -26,7 +25,7 @@ public class SeriesDialog extends JDialog {
         int n;
         double first;
         double diff;
-        static final String paramErrorMessage = "Check your params.\nN >= 0, numeric \nA1,B1 must be numeric \nD,Q should be numeric";;
+        static final String paramErrorMessage = "Check your params.\nN >= 0, numeric \nA1,B1 must be numeric \nD,Q should be numeric";
 
         InitData(String nStr, String firstStr, String diffStr) throws IllegalArgumentException {
             this.n = 0;
@@ -202,9 +201,22 @@ public class SeriesDialog extends JDialog {
             series = new Exponential(initData.first, initData.diff, initData.n);
             updateOutputState();
         } catch (IllegalArgumentException e) {
-            if (output.getText().equals("") || output.getText() == null || Character.isDigit(output.getText().charAt(0)))
-                output.setText(e.getMessage() + "\n" + output.getText());
+            output.setText(e.getMessage() + "\n" + extractNumericData(output.getText()));
         }
+    }
+
+    private String extractNumericData(String content) {
+        if (content.equals("") || content == null)
+            return "";
+
+        int i = -1;
+        StringBuilder sb = new StringBuilder(content);
+        i = sb.indexOf("\n");
+        while (!sb.toString().equals("") && i != -1) {
+            sb.replace(0, i + 1, "");
+            i = sb.indexOf("\n");
+        }
+        return sb.toString();
     }
 
     private void onLiner() {
@@ -213,8 +225,7 @@ public class SeriesDialog extends JDialog {
             series = new Liner(initData.first, initData.diff, initData.n);
             updateOutputState();
         } catch (IllegalArgumentException e) {
-            if (output.getText().equals("") || output.getText() == null || Character.isDigit(output.getText().charAt(0)))
-                output.setText(e.getMessage() + "\n" + output.getText());
+            output.setText(e.getMessage() + "\n" + extractNumericData(output.getText()));
         }
     }
 

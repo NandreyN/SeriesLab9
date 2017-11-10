@@ -22,13 +22,16 @@ public abstract class Series {
     }
 
     public String toString() {
+        if (n <= 0)
+            return "Empty here";
+
         StringBuilder sb = new StringBuilder();
         for (int i = 1; i <= n - 1; i++) {
             sb.append(String.valueOf(get(i)));
             sb.append(" , ");
         }
         sb.append(String.valueOf(get(n)));
-        sb.append("; \nSum = ").append(getSum());
+        sb.append("; \tSum = ").append(getSum());
         return sb.toString();
     }
 
