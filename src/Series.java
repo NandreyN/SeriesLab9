@@ -1,10 +1,14 @@
 import java.io.*;
-import java.util.*;
 
 public abstract class Series {
+    // add first and d here , remove from children
+    double first, delta;
     int n;
+    final static int SCALE = 100;
 
-    Series(int n) {
+    Series(double first, double delta, int n) {
+        this.first = first;
+        this.delta = delta;
         this.n = n;
     }
 
@@ -19,28 +23,18 @@ public abstract class Series {
 
     public String toString() {
         StringBuilder sb = new StringBuilder();
-        for (int i = 1; i <= n -1; i++){
+        for (int i = 1; i <= n - 1; i++) {
             sb.append(String.valueOf(get(i)));
             sb.append(" , ");
         }
         sb.append(String.valueOf(get(n)));
-        sb.append("; Sum = " + getSum());
+        sb.append("; \nSum = ").append(getSum());
         return sb.toString();
     }
 
     public void saveToFile(String fileName) throws IOException {
-        File file = new File(fileName);
-        boolean success = true;
-        if (!file.exists())
-            success = file.createNewFile();
-
-        if (!success)
-            throw new FileNotFoundException("File not found. Cannot create for  some reasons");
-
         BufferedWriter br = new BufferedWriter(new FileWriter(fileName));
-        for (int i = 1; i <= n; i++) {
-            br.write(String.valueOf(get(i)) + "\t");
-        }
+        br.write(this.toString());
         br.close();
     }
 }
